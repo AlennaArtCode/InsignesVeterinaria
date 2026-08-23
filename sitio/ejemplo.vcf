@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Riascos;Camila;;;
+FN:Camila Riascos (ejemplo)
+ORG:Consultorio Riascos — tarjeta de muestra In·signes
+TITLE:Odontología estética
+TEL;TYPE=CELL,VOICE:+57TUNUMERO
+EMAIL;TYPE=INTERNET:hola@insignes.co
+ADR;TYPE=WORK:;;;Pasto;Nariño;;Colombia
+URL:https://insignes.co/ejemplo
+NOTE:Tarjeta de ejemplo. Los datos son de muestra; el contacto es de In·signes.
+END:VCARD

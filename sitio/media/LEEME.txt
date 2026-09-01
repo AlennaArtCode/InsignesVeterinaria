@@ -1,0 +1,10 @@
+Carpeta de la galeria de la tarjeta del Dr. Meza (sitio/huellas.html).
+
+1. Pon aqui las fotos (.jpg) y los videos (.mp4).
+2. Abre sitio/huellas.html y busca la lista  var MEDIA = [
+   Escribe una linea por cada archivo y quita las // del inicio.
+
+Recomendado: fotos de maximo 1600 px de ancho y videos de menos de
+20 MB, para que la tarjeta siga abriendo rapido en celular.
+
+Si la lista MEDIA queda vacia, la seccion "galeria" no se muestra.

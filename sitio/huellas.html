@@ -42,8 +42,8 @@ ul{list-style:none}
 
 /* pie: firma y acciones */
 .pie{display:flex;align-items:center;justify-content:space-between;gap:16px}
-.firma{font-size:8.5px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:#8D939A;line-height:1.8;white-space:nowrap}
-.firma em{font-style:normal;color:#6E747A;display:block}
+.firma{font-size:8.5px;font-weight:500;letter-spacing:.28em;text-transform:uppercase;color:#8D939A;white-space:nowrap;display:flex;align-items:center;min-height:44px;transition:color .2s}
+.firma:hover,.firma:focus-visible{color:#D4D8DC}
 .acciones{display:flex;align-items:center;gap:6px}
 .acc{appearance:none;background:none;border:1px solid rgba(242,243,244,.2);color:#B3B9C0;font-family:inherit;font-size:8.5px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;padding:0 12px;min-height:40px;display:flex;align-items:center;cursor:pointer;white-space:nowrap;transition:border-color .2s,color .2s,background .2s}
 .acc:hover,.acc:focus-visible{border-color:rgba(233,166,59,.7);color:#F3C878;background:rgba(233,166,59,.1)}
@@ -119,7 +119,7 @@ ul{list-style:none}
 
 <section id="galeria" style="animation:entrar .8s cubic-bezier(.16,1,.3,1) .34s both"><p class="rotulo">galería</p><div id="tira"></div><p class="pista">toca para ampliar</p></section>
 
-<div class="pie" style="animation:entrar .8s cubic-bezier(.16,1,.3,1) .40s both"><span class="firma">hecha por in·signes<em>by alenna art</em></span><div class="acciones"><button type="button" class="acc" id="verqr">ver QR</button><button type="button" class="acc" id="compartir">compartir</button></div></div>
+<div class="pie" style="animation:entrar .8s cubic-bezier(.16,1,.3,1) .40s both"><a class="firma" href="https://insignes.co" target="_blank" rel="noopener">in·signes</a><div class="acciones"><button type="button" class="acc" id="verqr">ver QR</button><button type="button" class="acc" id="compartir">compartir</button></div></div>
 </main>
 
 <div id="visor" hidden role="dialog" aria-modal="true" aria-label="Galería">

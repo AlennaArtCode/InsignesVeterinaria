@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Mario Andrés Meza Chaves · Huellas — Centro Médico Veterinario</title>
-<meta name="description" content="Médico veterinario COMVEZCOL en San Juan de Pasto. Caninos, felinos y equinos. Cirugía de tejidos blandos, ortopedia, medicina interna, reproducción y odontología. Emergencias 24 horas.">
+<meta name="description" content="Médico veterinario en San Juan de Pasto. Caninos, felinos y equinos. Cirugía de tejidos blandos, ortopedia, medicina interna y medicinas integrativas. Emergencias 24 horas.">
 <link rel="canonical" href="https://insignes.co/huellas">
 <meta property="og:type" content="profile">
 <meta property="og:title" content="Mario Andrés Meza Chaves · Huellas — Centro Médico Veterinario">
-<meta property="og:description" content="Médico veterinario COMVEZCOL en San Juan de Pasto. Caninos, felinos y equinos. Cirugía, ortopedia, medicina interna y medicinas complementarias. Emergencias 24 horas.">
+<meta property="og:description" content="Médico veterinario en San Juan de Pasto. Caninos, felinos y equinos. Cirugía, ortopedia, medicina interna y medicinas integrativas. Emergencias 24 horas.">
 <meta property="og:locale" content="es_CO">
 <meta property="og:url" content="https://insignes.co/huellas">
 <meta property="og:image" content="https://insignes.co/social-huellas.png">
@@ -19,7 +19,7 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preload" href="fonts/sans.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/sans-medium.woff2" as="font" type="font/woff2" crossorigin>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Huellas — Centro Médico Veterinario","description":"Atención de caninos, felinos y equinos. Cirugía de tejidos blandos, ortopedia y medicina interna. Medicina de emergencia, reproducción y odontología. Medicinas complementarias: zoocinesiatría, terapia neural, homeopatía veterinaria, biopuntura, medicina ortomolecular y ozonoterapia.","telephone":"+573154502046","email":"marioandresmeza@hotmail.com","url":"https://insignes.co/huellas","image":"https://insignes.co/social-huellas.png","sameAs":["https://www.facebook.com/profile.php?id=61593629071987","https://www.instagram.com/huellasvetarinaria/","https://www.tiktok.com/@veterinaria.huellas"],"openingHours":"Mo-Su 00:00-23:59","address":{"@type":"PostalAddress","streetAddress":"Manzana 10 Casa 6, Villaflor 2","addressLocality":"San Juan de Pasto","addressCountry":"CO"},"geo":{"@type":"GeoCoordinates","latitude":"1.2016708","longitude":"-77.2561702"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Huellas — Centro Médico Veterinario","description":"Atención de caninos y felinos: cirugía de tejidos blandos, ortopedia, medicina interna y medicinas integrativas (terapia neural, biopuntura, zoosiniatría, homotoxicología, ozonoterapia, medicina ortomolecular). Atención de equinos: emergencias por abdomen agudo, neonatos, cirugía, reproducción y odontología equina.","telephone":"+573154502046","email":"marioandresmeza@hotmail.com","url":"https://insignes.co/huellas","image":"https://insignes.co/social-huellas.png","sameAs":["https://www.facebook.com/profile.php?id=61593629071987","https://www.instagram.com/huellasvetarinaria/","https://www.tiktok.com/@veterinaria.huellas"],"openingHours":"Mo-Su 00:00-23:59","address":{"@type":"PostalAddress","streetAddress":"Manzana 10 Casa 6, Villaflor 2","addressLocality":"San Juan de Pasto","addressCountry":"CO"},"geo":{"@type":"GeoCoordinates","latitude":"1.2016708","longitude":"-77.2561702"}}</script>
 <style>
 @font-face{font-family:'Propia';src:url('fonts/sans.woff2') format('woff2');font-weight:400;font-display:swap}
 @font-face{font-family:'Propia';src:url('fonts/sans-medium.woff2') format('woff2');font-weight:500;font-display:swap}
@@ -43,10 +43,11 @@ ul{list-style:none}
 /* rótulo de cada sección */
 .rotulo{font-size:9px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:#8D939A;margin-bottom:18px}
 
-/* perfil profesional, dentro de la tarjeta */
-.perfil{display:grid;gap:8px}
-.perfil li{position:relative;padding-left:15px;font-size:12px;line-height:1.5;color:#A5ABB2;text-wrap:pretty}
-.perfil li::before{content:"";position:absolute;left:0;top:.52em;width:4px;height:4px;background:#E9A63B;opacity:.8}
+/* ámbitos de atención, dentro de la tarjeta */
+.ambitos{display:grid;gap:20px;border-top:1px solid rgba(242,243,244,.09);padding-top:22px}
+.ambitos h3{font-size:9px;font-weight:500;letter-spacing:.19em;text-transform:uppercase;color:#E9A63B;margin-bottom:9px}
+.ambitos p{font-size:12px;line-height:1.62;color:#A5ABB2;text-wrap:pretty}
+.ambitos em{font-style:normal;color:#C3C9CF}
 
 /* especializaciones */
 .esp li{border-top:1px solid rgba(242,243,244,.1);padding:15px 0 17px}
@@ -57,7 +58,7 @@ ul{list-style:none}
 /* galería */
 #tira{display:grid;grid-auto-flow:column;grid-auto-columns:62%;gap:10px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;margin:0 -22px;padding:0 22px 2px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
 #tira::-webkit-scrollbar{display:none}
-.pieza{position:relative;display:block;width:100%;aspect-ratio:4/5;scroll-snap-align:start;appearance:none;padding:0;border:1px solid rgba(242,243,244,.16);background:#0E1012;overflow:hidden;cursor:pointer}
+.pieza{position:relative;display:block;width:100%;aspect-ratio:1/1;scroll-snap-align:start;appearance:none;padding:0;border:1px solid rgba(242,243,244,.16);background:#0E1012;overflow:hidden;cursor:pointer}
 .pieza img,.pieza video{width:100%;height:100%;object-fit:cover;display:block;transition:transform .55s cubic-bezier(.16,1,.3,1)}
 .pieza:hover img,.pieza:hover video{transform:scale(1.05)}
 .pieza .rot{position:absolute;left:0;right:0;bottom:0;padding:26px 12px 11px;background:linear-gradient(to top,rgba(8,9,10,.9),rgba(8,9,10,.45) 55%,transparent);font-size:10px;font-weight:500;letter-spacing:.05em;color:#F2F3F4;text-align:left;text-wrap:pretty}
@@ -83,8 +84,8 @@ ul{list-style:none}
 <div data-sobre="1" style="position:relative;border:1px solid rgba(242,243,244,.2);background:linear-gradient(158deg,#141618 0%,#0B0C0D 58%,#0A0B0C 100%);display:flex;flex-direction:column;overflow:hidden;will-change:transform;transition:transform .18s cubic-bezier(.16,1,.3,1);animation:entrarTarjeta .9s cubic-bezier(.16,1,.3,1) both">
 <div data-brillo="1" aria-hidden="true" style="position:absolute;top:-30%;left:-20%;width:150%;height:120%;background:linear-gradient(112deg,transparent 38%,rgba(242,243,244,.09) 50%,transparent 62%);pointer-events:none;will-change:transform;transition:transform .18s cubic-bezier(.16,1,.3,1)"></div>
 <div style="position:relative;display:flex;flex-direction:column;gap:34px;padding:30px 24px 30px">
-<img src="logo-huellas-dorado.png" alt="Huellas — Centro Médico Veterinario" width="1120" height="743" style="width:196px;height:auto;display:block">
-<div><p style="font-size:clamp(25px,7vw,29px);font-weight:500;letter-spacing:-.036em;line-height:1.05;margin-bottom:12px">Mario Andrés<br>Meza Chaves</p><p style="font-size:9px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:#E9A63B;margin-bottom:16px">Médico veterinario COMVEZCOL</p><ul class="perfil"><li>Atención de caninos y felinos</li><li>Especialista en cirugía de tejidos blandos, ortopedia y medicina interna</li><li>Atención de equinos</li><li>Medicina de emergencia y cirugía. Especialista en reproducción y odontología</li></ul></div>
+<img src="logo-huellas-dorado.png" alt="Huellas — Centro Médico Veterinario · Sanando de corazón" width="1120" height="746" style="width:210px;height:auto;display:block">
+<div><p style="font-size:clamp(25px,7vw,29px);font-weight:500;letter-spacing:-.036em;line-height:1.05;margin-bottom:12px">Mario Andrés<br>Meza Chaves</p><p style="font-size:9px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:#E9A63B;margin-bottom:24px">Médico veterinario</p><div class="ambitos"><div><h3>Atención de caninos y felinos</h3><p>Especialista en cirugía de tejidos blandos y ortopedia. Especialista en medicina interna y <em>medicinas integrativas</em>: terapia neural, biopuntura, zoosiniatría, homotoxicología, ozonoterapia y medicina ortomolecular.</p></div><div><h3>Atención de equinos</h3><p>Emergencias por abdomen agudo (cólico). Atención de neonatos. Especialista en cirugía, reproducción y odontología equina.</p></div></div></div>
 </div>
 <div style="position:relative;display:grid;gap:0"><a href="huellas.vcf" style="border-top:1px solid rgba(242,243,244,.1);display:flex;align-items:center;justify-content:space-between;gap:14px;padding:0 24px;min-height:56px"><span style="font-size:10px;font-weight:500;letter-spacing:.22em;text-transform:uppercase">guardar contacto</span><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#9198A0" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="M7.5 10.5 12 15l4.5-4.5"/><path d="M5 19h14"/></svg></a>
 <a href="https://www.google.com/maps/place/1%C2%B012'06.0%22N+77%C2%B015'22.2%22W/@1.2016708,-77.2561702,3a,75y,238.21h,80.98t/data=!3m7!1e1!3m5!1sumvrfQLa5R8VC6Y9DmW0OA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D9.022431766393211%26panoid%3DumvrfQLa5R8VC6Y9DmW0OA%26yaw%3D238.20605771136863!7i16384!8i8192!4m4!3m3!8m2!3d1.2016708!4d-77.2561702?entry=ttu&amp;g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" style="border-top:1px solid rgba(242,243,244,.1);display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:17px 24px 18px"><span style="font-size:10px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;padding-top:2px">ubicación</span><span style="font-size:12px;line-height:1.5;color:#9198A0;text-align:right">Manzana 10 Casa 6, Villaflor 2<br>San Juan de Pasto ↗</span></a>
@@ -96,13 +97,13 @@ ul{list-style:none}
 
 <section style="animation:entrar .8s cubic-bezier(.16,1,.3,1) .16s both"><p class="rotulo">servicios</p><ul style="display:grid;grid-template-columns:1fr 1fr;gap:14px 20px"><li style="font-size:12px;line-height:1.45;color:#D4D8DC">Medicina general y especializada</li><li style="font-size:12px;line-height:1.45;color:#D4D8DC">Ecografía</li><li style="font-size:12px;line-height:1.45;color:#D4D8DC">Rayos X</li><li style="font-size:12px;line-height:1.45;color:#D4D8DC">Laboratorio clínico</li><li style="font-size:12px;line-height:1.45;color:#D4D8DC">Cirugía y ortopedia</li><li style="font-size:12px;line-height:1.45;color:#D4D8DC">Profilaxis dental</li><li style="font-size:12px;line-height:1.45;color:#D4D8DC">Hospitalización</li><li style="font-size:12px;line-height:1.45;color:#D4D8DC">Guardería canina</li><li style="font-size:12px;line-height:1.45;color:#D4D8DC">Adiestramiento canino</li><li style="font-size:12px;line-height:1.45;color:#D4D8DC">Pet Shop</li><li style="font-size:12px;line-height:1.45;color:#D4D8DC">Clases de equitación</li><li style="font-size:12px;line-height:1.45;color:#D4D8DC">Equinoterapia</li></ul></section>
 
-<section style="animation:entrar .8s cubic-bezier(.16,1,.3,1) .22s both"><p class="rotulo">especializaciones</p><ul class="esp"><li><h3>Medicinas complementarias</h3><p>Zoocinesiatría, terapia neural, homeopatía veterinaria, biopuntura, medicina ortomolecular y ozonoterapia.</p></li><li><h3>Geriatría y columna</h3><p>Tratamientos especiales para mascotas geriátricas y patologías de columna.</p></li><li><h3>Moquillo canino</h3><p>Protocolo especial para el tratamiento del moquillo canino en fase neurológica.</p></li></ul></section>
+<section style="animation:entrar .8s cubic-bezier(.16,1,.3,1) .22s both"><p class="rotulo">especializaciones</p><ul class="esp"><li><h3>Geriatría y columna</h3><p>Tratamientos especiales para mascotas geriátricas y patologías de columna.</p></li><li><h3>Moquillo canino</h3><p>Protocolo especial para el tratamiento del moquillo canino en fase neurológica.</p></li></ul></section>
 
 <section style="display:grid;gap:0;border-top:1px solid rgba(242,243,244,.1);animation:entrar .8s cubic-bezier(.16,1,.3,1) .28s both"><a href="tel:+573103705937" style="border-bottom:1px solid rgba(242,243,244,.1);display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:50px"><span style="font-size:9px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:#8D939A">celular</span><span style="font-size:12px;color:#D4D8DC">310 370 5937</span></a><a href="tel:+573154502046" style="border-bottom:1px solid rgba(242,243,244,.1);display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:50px"><span style="font-size:9px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:#8D939A">consultorio</span><span style="font-size:12px;color:#D4D8DC">315 450 2046</span></a><a href="mailto:marioandresmeza@hotmail.com" style="border-bottom:1px solid rgba(242,243,244,.1);display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:50px"><span style="font-size:9px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:#8D939A">correo</span><span style="font-size:12px;color:#D4D8DC">marioandresmeza@hotmail.com</span></a></section>
 
 <section id="galeria" style="animation:entrar .8s cubic-bezier(.16,1,.3,1) .34s both"><p class="rotulo">galería</p><div id="tira"></div><p class="pista">toca para ampliar</p></section>
 
-<div style="display:flex;align-items:center;justify-content:space-between;gap:14px;animation:entrar .8s cubic-bezier(.16,1,.3,1) .40s both"><span style="font-size:8.5px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:#8D939A">hecha por in·signes by Alenna Art </span><button type="button" id="compartir" style="appearance:none;background:none;border:none;color:#8D939A;font-family:inherit;font-size:8.5px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;padding:12px 0 12px 12px;min-height:44px;cursor:pointer">compartir</button></div>
+<div style="display:flex;align-items:center;justify-content:space-between;gap:14px;animation:entrar .8s cubic-bezier(.16,1,.3,1) .40s both"><span style="font-size:8.5px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:#8D939A">hecha por in·signes</span><button type="button" id="compartir" style="appearance:none;background:none;border:none;color:#8D939A;font-family:inherit;font-size:8.5px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;padding:12px 0 12px 12px;min-height:44px;cursor:pointer">compartir</button></div>
 </main>
 
 <div id="visor" hidden role="dialog" aria-modal="true" aria-label="Galería">
@@ -134,10 +135,9 @@ ul{list-style:none}
    de menos de 20 MB para que carguen rapido en celular.
    ============================================================== */
 var MEDIA = [
-  {tipo:"video",  src:"media/equino-hospitalizacion.mp4", poster:"media/equino-hospitalizacion.jpg", texto:"Hospitalización y fluidoterapia", foco:"6% 50%"},
-  {tipo:"imagen", src:"media/dr-meza-equinos.jpg", texto:"Atención de equinos", foco:"68% 50%"},
-  {tipo:"imagen", src:"media/caninos-golden.jpg", texto:"Atención de caninos"},
-  {tipo:"imagen", src:"media/equinos-caballo.jpg", texto:"Valoración en campo", foco:"42% 50%"},
+  {tipo:"imagen", src:"media/odontologia-equina.jpg", texto:"Odontología equina"},
+  {tipo:"imagen", src:"media/atencion-en-campo.jpg",  texto:"Atención en campo"},
+  {tipo:"imagen", src:"media/instalaciones.jpg",      texto:"Nuestras instalaciones"},
 ];
 
 (function(){

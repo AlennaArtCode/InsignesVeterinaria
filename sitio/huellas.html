@@ -58,8 +58,7 @@ ul{list-style:none}
 #qrCerrar{position:absolute;top:max(14px,env(safe-area-inset-top));right:14px}
 
 /* foto de la veterinaria detras del logo, disolviendose en la tarjeta */
-.hero{position:absolute;top:0;left:0;right:0;height:300px;z-index:0;pointer-events:none;background:url('hero-huellas.jpg') center 38%/cover no-repeat}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,12,13,.38) 0%,rgba(11,12,13,.50) 40%,rgba(11,12,13,.72) 70%,rgba(11,12,13,.93) 88%,#0B0C0D 100%)}
+.hero{position:absolute;top:0;left:0;right:0;height:380px;z-index:0;pointer-events:none;background:url('hero-huellas.jpg') center 38%/cover no-repeat}
 
 /* fondo: la veterinaria, desenfocada */
 .fondo{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.6;background:url('fondo-huellas.jpg') center center/cover no-repeat}
@@ -109,7 +108,7 @@ ul{list-style:none}
 <div data-sobre="1" style="position:relative;border:1px solid rgba(242,243,244,.2);background:linear-gradient(158deg,#141618 0%,#0B0C0D 58%,#0A0B0C 100%);display:flex;flex-direction:column;overflow:hidden;will-change:transform;transition:transform .18s cubic-bezier(.16,1,.3,1);animation:entrarTarjeta .9s cubic-bezier(.16,1,.3,1) both">
 <div class="hero" aria-hidden="true"></div>
 <div data-brillo="1" aria-hidden="true" style="position:absolute;top:-30%;left:-20%;width:150%;height:120%;background:linear-gradient(112deg,transparent 38%,rgba(242,243,244,.09) 50%,transparent 62%);pointer-events:none;will-change:transform;transition:transform .18s cubic-bezier(.16,1,.3,1)"></div>
-<div style="position:relative;display:flex;flex-direction:column;gap:34px;padding:30px 24px 30px">
+<div style="position:relative;display:flex;flex-direction:column;gap:158px;padding:30px 24px 30px">
 <img src="logo-huellas-dorado.png" alt="Huellas — Centro Médico Veterinario · Sanando de corazón" width="1120" height="763" style="width:230px;height:auto;display:block">
 <div><p style="font-size:clamp(25px,7vw,29px);font-weight:500;letter-spacing:-.036em;line-height:1.05;margin-bottom:12px">Mario Andrés<br>Meza Chaves</p><p style="font-size:9px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:#E9A63B;margin-bottom:24px">Médico veterinario</p><div class="ambitos"><div><h3>Atención de caninos y felinos</h3><p>Especialista en cirugía de tejidos blandos y ortopedia. Especialista en medicina interna y <em>medicinas integrativas</em>: terapia neural, biopuntura, zoosiniatría, homotoxicología, ozonoterapia y medicina ortomolecular.</p></div><div><h3>Atención de equinos</h3><p>Emergencias por abdomen agudo (cólico). Atención de neonatos. Especialista en cirugía, reproducción y odontología equina.</p></div></div></div>
 </div>

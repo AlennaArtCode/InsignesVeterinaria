@@ -37,7 +37,7 @@ ul{list-style:none}
 
 /* redes sociales */
 .redes{display:flex;align-items:center;gap:4px}
-.red{width:44px;height:44px;display:flex;align-items:center;justify-content:center;color:#F0F2F4}
+.red{flex:0 0 44px;width:44px;height:44px;min-height:44px;display:flex;align-items:center;justify-content:center;color:#F0F2F4}
 .red i{width:36px;height:36px;border-radius:50%;border:1px solid rgba(242,243,244,.26);background:rgba(242,243,244,.06);display:flex;align-items:center;justify-content:center;transition:border-color .22s,background .22s,color .22s,transform .22s}
 .red:hover i,.red:focus-visible i{border-color:rgba(233,166,59,.8);background:rgba(233,166,59,.14);color:#F3C878;transform:translateY(-1px)}
 
@@ -46,7 +46,7 @@ ul{list-style:none}
 .firma{font-size:8.5px;font-weight:500;letter-spacing:.28em;text-transform:uppercase;color:#8D939A;white-space:nowrap;display:flex;align-items:center;min-height:44px;transition:color .2s}
 .firma:hover,.firma:focus-visible{color:#D4D8DC}
 .acciones{display:flex;align-items:center;gap:6px}
-.acc{appearance:none;background:none;border:1px solid rgba(242,243,244,.2);color:#B3B9C0;font-family:inherit;font-size:8.5px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;padding:0 12px;min-height:40px;display:flex;align-items:center;cursor:pointer;white-space:nowrap;transition:border-color .2s,color .2s,background .2s}
+.acc{appearance:none;background:none;border:1px solid rgba(242,243,244,.2);color:#B3B9C0;font-family:inherit;font-size:8.5px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;padding:0 12px;min-height:44px;display:flex;align-items:center;cursor:pointer;white-space:nowrap;transition:border-color .2s,color .2s,background .2s}
 .acc:hover,.acc:focus-visible{border-color:rgba(233,166,59,.7);color:#F3C878;background:rgba(233,166,59,.1)}
 
 /* ventana del código QR */
@@ -58,7 +58,7 @@ ul{list-style:none}
 #qrCerrar{position:absolute;top:max(14px,env(safe-area-inset-top));right:14px}
 
 /* foto de la veterinaria detras del logo, disolviendose en la tarjeta */
-.hero{position:absolute;top:0;left:0;right:0;height:380px;z-index:0;pointer-events:none;background:url('hero-huellas.jpg') center 38%/cover no-repeat}
+.hero{position:absolute;top:0;left:0;right:0;height:380px;z-index:0;pointer-events:none;background:url('hero-huellas.jpg') center center/cover no-repeat;-webkit-mask-image:linear-gradient(180deg,#000 0%,#000 52%,rgba(0,0,0,.55) 76%,transparent 94%);mask-image:linear-gradient(180deg,#000 0%,#000 52%,rgba(0,0,0,.55) 76%,transparent 94%)}
 
 /* fondo: la veterinaria, desenfocada */
 .fondo{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.6;background:url('fondo-huellas.jpg') center center/cover no-repeat}

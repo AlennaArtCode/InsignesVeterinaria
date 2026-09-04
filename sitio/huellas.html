@@ -100,6 +100,20 @@ ul{list-style:none}
 .vbtn:hover{border-color:rgba(242,243,244,.45);color:#F2F3F4}
 .vbtn[disabled]{opacity:.28;cursor:default}
 #visorCerrar{position:absolute;top:max(14px,env(safe-area-inset-top));right:14px}
+
+/* la tarjeta crece en tableta y pc: a distancia de monitor, 12px se lee
+   mucho mas chico que en un celular a un palmo de la cara */
+@media (min-width:600px){main{zoom:1.14}}
+@media (min-width:1024px){main{zoom:1.30}}
+/* las ventanas van fuera de main: se les sube el tamaño aparte */
+@media (min-width:1024px){
+.vbtn{width:52px;height:52px}
+#qrAcciones .acc{font-size:11px;min-height:50px;padding:0 18px}
+#qrPie{font-size:11px}
+#qr img{width:min(76vw,360px)}
+#visorPie{font-size:13px}
+#visorConteo{font-size:11px;min-width:72px}
+}
 </style>
 </head>
 <body>

@@ -38,6 +38,9 @@ ul{list-style:none}
 .num{font-size:9px;font-weight:500;letter-spacing:.18em;color:#8D939A;flex:none;width:20px}
 .titulin{font-size:14px;font-weight:500;letter-spacing:-.01em;margin-bottom:5px}
 .detalle{font-size:12.5px;line-height:1.65;color:#9198A0}
+.servicio{border-bottom:1px solid rgba(242,243,244,.12);padding:17px 0;display:grid;gap:6px}
+.servicio-cima{display:flex;align-items:baseline;justify-content:space-between;gap:16px}
+.valor{font-size:11.5px;font-weight:500;letter-spacing:.03em;color:#C3C9CF;white-space:nowrap;font-variant-numeric:tabular-nums;flex:none}
 @keyframes entrar{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion: reduce){*{animation:none !important;transition:none !important}}
 </style>
@@ -121,6 +124,43 @@ ul{list-style:none}
     <p style="font-size:9px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:#8D939A;margin-bottom:14px">precio</p>
     <p style="font-size:clamp(26px,7.4vw,32px);font-weight:500;letter-spacing:-.038em;line-height:1.1;margin-bottom:10px">Desde $350.000</p>
     <p style="font-size:13px;line-height:1.68;color:#9198A0;text-wrap:pretty">Pago único. Sin mensualidad, sin renovación. El diseño, la publicación y el código QR incluidos.</p>
+  </section>
+
+  <section style="border-top:1px solid rgba(242,243,244,.12);padding:44px 0 48px">
+    <p style="font-size:9px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:#8D939A;margin-bottom:14px">qué más hago</p>
+    <p style="font-size:clamp(20px,5.4vw,24px);font-weight:500;letter-spacing:-.03em;line-height:1.2;margin-bottom:10px;text-wrap:pretty">La tarjeta suele ser el comienzo.</p>
+    <p style="font-size:13px;line-height:1.68;color:#9198A0;text-wrap:pretty">Casi nadie llega pidiendo todo de una. Se empieza por la tarjeta y desde ahí se va sumando lo que el negocio pida.</p>
+    <ul style="display:grid;gap:0;margin-top:24px;border-top:1px solid rgba(242,243,244,.12)">
+      <li class="servicio">
+        <div class="servicio-cima">
+          <p class="titulin">Logo e identidad</p>
+          <p class="valor">desde $450.000</p>
+        </div>
+        <p class="detalle">Su logo en alta calidad y las versiones que de verdad va a usar: el perfil de redes, la firma del correo, el aviso del local.</p>
+      </li>
+      <li class="servicio">
+        <div class="servicio-cima">
+          <p class="titulin">Página web</p>
+          <p class="valor">desde $890.000</p>
+        </div>
+        <p class="detalle">Cuando la tarjeta se le queda corta. Un sitio propio, rápido y sin plantillas. Pago único, igual que la tarjeta.</p>
+      </li>
+      <li class="servicio">
+        <div class="servicio-cima">
+          <p class="titulin">Manejo de redes</p>
+          <p class="valor">desde $690.000 / mes</p>
+        </div>
+        <p class="detalle">Contenido, campañas y reseñas, para que lo encuentren cuando lo están buscando. Mes a mes, sin permanencia.</p>
+      </li>
+      <li class="servicio">
+        <div class="servicio-cima">
+          <p class="titulin">Fotografía y retoque</p>
+          <p class="valor">desde $190.000</p>
+        </div>
+        <p class="detalle">Sus fotos listas para mostrarse: bien recortadas, corregidas y livianas para que la página cargue rápido.</p>
+      </li>
+    </ul>
+    <p style="padding-top:16px;font-size:12px;line-height:1.68;color:#8D939A;text-wrap:pretty">Cada cosa se puede tomar por separado. No hay paquetes obligados.</p>
   </section>
 
   <section style="border-top:1px solid rgba(242,243,244,.12);padding:40px 0 0">
